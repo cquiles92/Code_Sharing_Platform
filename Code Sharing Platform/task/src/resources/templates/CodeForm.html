@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create</title>
+    <link th:href="@{/styles/cssandjs/form.css}" rel="stylesheet"/>
+    <th:block th:include="fragments/headerfragment :: head"></th:block>
+</head>
+<body>
+<form th:replace="fragments/formfragment :: form"></form>
+</body>
+</html>
