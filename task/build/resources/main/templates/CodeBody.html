@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title th:text="${title}"></title>
+        <th:block th:include="fragments/headerfragment :: head"></th:block>
+    </head>
+    <body th:replace="fragments/bodyfragment :: codebody"></body>
+</html>

@@ -1,0 +1,10 @@
+<body th:fragment="codebody">
+        <div th:each="codeobject: ${codeobjects}">
+            <span id="load_date" th:text="${codeobject.date}"></span>
+            <br><span id="time_restriction" th:if="${codeobject.isTimeLimited}" th:text="|${codeobject.time} second(s) left|" ></span>
+            <br><span id="views_restriction" th:if="${codeobject.isViewLimited}" th:text="|${codeobject.views} view(s) left|" ></span>
+            <pre id="code_snippet">
+                <code th:text="${codeobject.code}"></code>
+            </pre>
+        </div>
+</body>

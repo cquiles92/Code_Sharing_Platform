@@ -1,0 +1,12 @@
+    <form th:fragment="form">
+            <textarea id="code_snippet" placeholder="// write your code here"></textarea>
+            <br>
+            <button id="send_snippet" type="submit" th:onclick="send()">Submit</button>
+            <br>
+            <label>Time restriction:</label>
+            <input id="seconds_ttl" type="text" value="0" onfocus="this.value=''">
+            <br>
+            <label>Views restriction</label>
+            <input id="view_count" type="number" value="0" onfocus="this.value=''">
+            <script type="text/javascript" th:src="@{/styles/cssandjs/formAction.js}"></script>
+        </form>
